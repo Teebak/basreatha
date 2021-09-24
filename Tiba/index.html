@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basreatha</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tailwindcss.css" />
+    <!-- FONTS BELOW GET RID OF WHAT'S NOT NEEDED -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lateef&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "myFirstFont";
+        src: url("Reso/ScriptMTBold.ttf");
+      }
+      @font-face {
+        font-family: "mySecondFont";
+        src: url("Reso/Questv1-Bold.otf.ttf");
+      }
+      @font-face {
+        font-family: "myThirdFont";
+        src: url("Reso/juice\ itc.ttf");
+      }
+      .arabicF2{
+        font-family: myThirdFont;
+      }
+      .arabicF{
+        font-family: mySecondFont;
+        /* font-weight: 800; */
+      }
+      .markColor:hover {
+        color: #b59143;
+      }
+      .nameColor {
+        color: #b59143;
+        font-family: myFirstFont;
+      }
+      .markColor:active {
+        background-color: #dfd7c5;
+        color: #b89449;
+        padding: 4;
+        border-radius: 4;
+        border: 4, solid, black;
+      }
+      h1 {
+        font-family: "Lalezar", cursive;
+      }
+      .navFont {
+        font-family: "Glory", sans-serif;
+      }
+      .normColor {
+        color: #b59143;
+      }
+      .lighterColor {
+        color: #a5946dad;
+      }
+      .bgColor {
+        background-color: #b89449 !important;
+        /* color: #b89449; */
+      }
+      .bgColor2 {
+        background-color: #b8954934 !important;
+        /* color: #b89449; */
+      }
+      .ourBookPlate {
+        background-color: rgba(255, 255, 255, 0.281);
+        backdrop-filter: blur(8px);
+      }
+      .shadowEff {
+        box-shadow: 5px 3px 6px 2px rgba(0, 0, 0, 0.2),
+          4px 6px 3px 2px rgba(0, 0, 0, 0.19);
+      }
+      .arabicTwo {
+        font-family: "Aref Ruqaa", serif;
+      }
+      .kufiFont {
+        font-family: "Reem Kufi", sans-serif;
+      }
+      .arabicThree {
+        font-family: "El Messiri", sans-serif;
+      }
+      /*
+ *  STYLE 2
+ */
+
+      #style-2::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: #f5f5f5;
+      }
+
+      #style-2::-webkit-scrollbar {
+        width: 4px;
+        background-color: #f5f5f5;
+      }
+
+      #style-2::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #b59143;
+      }
+      span.complete{
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-full" id="app">
+      <div class="w-full">
+        <!-- 
+            N
+            A
+            V
+         -->
+        <div class=" bg-gray-100 flex justify-around z-50">
+          <div>
+            <h1
+              class="
+                z-50
+                mt-12
+                font-light
+                text-3xl
+                italic
+                font-serif
+                nameColor
+                transform
+                -translate-y-2
+                absolute
+                left-36
+                hidden 
+                md:block
+              "
+            >
+              Basreata
+            </h1>
+          </div>
+          <div
+            class="
+              flex
+              justify-between
+              w-4/12
+              mt-12
+              text-lg
+              italic
+              font-sans
+              mr-32
+              font-light
+              navFont
+            "
+          >
+            <button class="text-gray-500 markColor navFont focus:bg-yellow-50 px-5 transition duration-500 ease-in-out rounded-2xl focus:scale-100             hidden
+            md:block"><a href="" class=" ">Home</a></button>
+            <button class="text-gray-500 markColor navFont focus:bg-yellow-50 px-5 transition duration-500 ease-in-out rounded-2xl focus:scale-100             hidden
+            md:block">
+              <a href="#slideTwo">Our books </a>
+            </button>
+            <h1 class="text-gray-500 markColor navFont focus:bg-yellow-50 px-5 transition duration-500 ease-in-out rounded-2xl focus:scale-100             hidden
+            md:block">
+              <a href="">About us </a>
+            </h1>
+            <h1 class="text-gray-500 markColor navFont bgColor2 px-5 transition duration-500 ease-in-out rounded-2xl focus:scale-100             hidden
+            md:block">
+              <a href="#slideThree">Contact </a>
+            </h1>
+          </div>
+        </div>
+        <!-- 
+            I
+            M
+            A
+            G
+            E
+            S
+         -->
+        <div class="flex bg-gray-100">
+          <div class="h-80 w-full relative z-0">
+            <img
+              src="Reso/BAS21.png"
+              alt=""
+              class="w-12/12 absolute -bottom-16 -left-36 z-0"
+            />
+          </div>
+          <div class="relative w-full">
+            <img
+              src="Reso/IMG_9066.png"
+              alt=""
+              class="w-7/12 absolute bottom-0 left-20"
+            />
+          </div>
+        </div>
+        <!-- 
+            B O O K
+            I M A G E
+         -->
+        <div class="w-11/12 relative -mt-4">
+          <img
+            src="Reso/Book_Cover_Mockup (1).png"
+            alt=""
+            class="w-7/12 absolute -bottom-56 left-20"
+          />
+        </div>
+        <!-- بصرتنا
+        الحبيبة
+      يمعود -->
+        <div class="flex 1 1 mt-16 h-6/6 w-full mb-36">
+          <div class="w-7/12"></div>
+          <div >
+            <div>
+              <h1 class="pl-16 text-gray-500 text-4xl arabicF font-light">
+                ! الدنيا بصرة فابدأ منها
+              </h1>
+            </div>
+            <div class="flex mt-12 mr justify-between"></div>
+              <div >
+                <button
+                  class="
+                    text-base
+                    border-1
+                    mr-16
+                    rounded-3xl
+                    px-4
+                    py-2
+                    navFont
+                    bgColor
+                    bg-opacity-10
+                    font-semibold
+                    text-white
+                    
+                    
+                  "
+                >
+                  Learn More
+                </button>
+              </div>
+              <div class="grid text-1xl text-right -mt-12 lighterColor arabicF">
+                <h1 class="arabicF">مكتبة ومنشورات بصرياثا</h1>
+                <h1 class="arabicF">.إقرأ ما تريد وقتما تريد</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- S
+      E
+    C
+  O
+N
+ D
+   P
+     A
+        G
+          E-->
+      <div class="" id="slideTwo">
+        <div
+          class=""
+          style="
+            background-image: url(Reso/close-up-student-reading-book6.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 825px;
+          "
+        >
+        <div class="grid-rows-2 ">
+          <div class="flex justify-center">
+          <div class="navFont text-4xl pt-16  text-gray-600 font-bold w-9/12 justify-center">
+            OUR <span class="normColor">BOOKS</span>
+          </div></div>
+          <div class="flex justify-between mx-auto mt-36 w-9/12">
+            <div class="grid rounded-2xl h-3/6 shadow-lg ourBookPlate">
+              <div class="relative">
+                <img
+                  src="Reso/bc1.jpg"
+                  alt=""
+                  class="
+                    absolute
+                    rounded-2xl
+                    w-7/12
+                    shadowEff
+                    left-10
+                    opacity-90
+                    -top-10
+                  "
+                />
+              </div>
+              <div class="grid px-6 pt-44 h-96 w-52">
+                <div class="text-gray-600 text-3xl mb-4 navFont font-medium">
+                  Torn
+                </div>
+                <div class="normColor font-light pb-4">By Paul Clarke</div>
+                <div class="row-span-2 text-gray-600 font-light text-xs pb-4">
+                  Torn tells us the story of Alice, a teenager from London who
+                  hides a dark and terrible secret.
+                </div>
+                <div class="row-span-2 pb-6">
+                  <button
+                    class="
+                      px-4
+                      py-1
+                      rounded-3xl
+                      bgColor
+                      text-white text-sm
+                      font-light
+                      shadow-md
+                    "
+                  >
+                    More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="grid mx-16 rounded-2xl h-3/6 shadow-lg ourBookPlate">
+              <div class="relative">
+                <img
+                  src="Reso/bc2.jpg"
+                  alt=""
+                  class="
+                    absolute
+                    rounded-2xl
+                    w-7/12
+                    shadowEff
+                    left-10
+                    opacity-90
+                    -top-10
+                  "
+                />
+              </div>
+              <div class="grid px-6 pt-44 w-52 h-96">
+                <div class="text-gray-600 text-2xl mb-4 arabicF font-medium text-right">
+                  رودهام
+                </div>
+                <div class="normColor arabicF2 font-light pb-4 text-right">كورتس فلد</div>
+                <div
+                  class="
+                    row-span-2
+                    text-gray-600
+                    arabicF2
+                    font-light
+                    text-sm
+                    pb-4
+                    text-right
+                  "
+                >
+                  نستكشف من خلالها الوِحدة، ضياع الأزمات الأخلاقية، والإرادة
+                  الحديدية
+                </div>
+                <div class="row-span-2 pb-6">
+                  <button
+                    class="
+                      px-4
+                      py-1
+                      rounded-3xl
+                      bgColor
+                      text-white text-sm
+                      font-light
+                      shadow-md
+                    "
+                  >
+                    More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="grid rounded-2xl h-3/6 shadow-lg ourBookPlate">
+              <div class="relative">
+                <img
+                  src="Reso/bc3.jpg"
+                  alt=""
+                  class="
+                    absolute
+                    rounded-2xl
+                    w-7/12
+                    shadowEff
+                    left-10
+                    opacity-90
+                    -top-10
+                  "
+                />
+              </div>
+              <div class="grid px-6 pt-44 h-96 w-52">
+                <div class="text-gray-600 text-3xl mb-4 navFont font-medium">
+                  Educated
+                </div>
+                <div class="normColor font-light pb-4">By Tara Westover</div>
+                <div class="row-span-2 text-gray-600 font-light text-xs pb-4">
+                  Torn tells us the story of Alice, a teenager from London who
+                  hides a dark and terrible secret.
+                </div>
+                <div class="row-span-2 pb-6">
+                  <button
+                    class="
+                      px-4
+                      py-1
+                      rounded-3xl
+                      bgColor
+                      text-white text-sm
+                      font-light
+                      shadow-md
+                    "
+                  >
+                    More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="grid ml-16 rounded-2xl h-3/6 shadow-lg ourBookPlate">
+              <div class="relative">
+                <img
+                  src="Reso/bc4.jpg"
+                  alt=""
+                  class="
+                    absolute
+                    rounded-2xl
+                    w-7/12
+                    shadowEff
+                    left-10
+                    opacity-90
+                    -top-10
+                  "
+                />
+              </div>
+              <div class="grid px-5 pt-44 h-96 w-52">
+                <div class="text-gray-600 text-2xl mb-4 arabicF font-medium text-right">
+                  قصّة الإسم الجديد
+                </div>
+                <div class="normColor arabicF2 font-light pb-4 text-right">
+                  إلينا فرنتا
+                </div>
+                <div
+                  class="
+                    row-span-2
+                    text-gray-600
+                    font-light
+                    text-sm
+                    pb-4
+                    mb-2
+                    overflow-y-auto
+                    arabicF2
+                    text-right
+                  "
+                  id="style-2"
+                >
+                  قصّة رائعة لفتاة تبدأ حياة جديدة مع هوية جديدة في مجتمع جديد
+                </div>
+                <div class="row-span-2 pb-6">
+                  <button
+                    class="
+                      px-4
+                      py-1
+                      rounded-3xl
+                      bgColor
+                      text-white text-sm
+                      font-light
+                      shadow-md
+                    "
+                  >
+                    More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- t
+        h
+        i
+        r
+        d
+
+            S
+            l
+            i
+            d
+            e -->
+      <div class="w-full h-screen bg-gray-100 relative" id="slideThree">
+        <img
+          src="Reso/Bas23.png"
+          alt=""
+          class="h-screen w-auto opacity-10 absolute bottom-0 -left-80 mt-10"
+        />
+
+        <div class="navFont pt-20 ml-32 text-5xl font-bold text-gray-400">
+          <span class="normColor">Let's</span> Get In Touch
+        </div>
+        <div class="ml-52 mt-24 flex">
+          <div><img src="Reso/FA.png" alt="" class="w-8" /></div>
+          <div>
+            <h1
+              class="text-xl text-gray-500 text-center pt-1 ml-6 arabicF"
+            >
+              مكتبة بصرياثا
+            </h1>
+          </div>
+        </div>
+        <div class="ml-52 mt-12 flex">
+          <div><img src="Reso/IG.png" alt="" class="w-8" /></div>
+          <div>
+            <h1
+              class="
+                text-xl text-gray-500 text-center
+                pt-1
+                ml-6
+                navFont
+                font-bold
+              "
+            >
+              @Basreatha
+            </h1>
+          </div>
+        </div>
+        <div class="ml-52 mt-12 flex">
+          <div><img src="Reso/WA.png" alt="" class="w-8" /></div>
+          <div>
+            <h1
+              class="
+                text-xl text-gray-500 text-center
+                pt-1
+                ml-6
+                navFont
+                font-bold
+                z-30
+              "
+            >
+              +964 770 7004 724
+            </h1>
+          </div>
+        </div>
+        <div class="ml-52 mt-12 flex">
+          <div><img src="Reso/Loc.png" alt="" class="w-8" /></div>
+          <div>
+            <h1
+              class="
+                text-xl text-gray-500 text-center
+                pt-1
+                ml-6
+                arabicF
+                font-semibold
+                z-30
+              "
+            >
+              الجنينة - شارع السوق - قرب الشارع التجاري
+            </h1>
+          </div>
+        </div>
+        <div class="relative">
+          <div
+            class="
+              absolute
+              right-64
+              -top-96
+              w-96
+              h-96
+              rounded-2xl
+              shadow-2xl
+              bgColor
+              pt-10
+            "
+          >
+            <label for="" class="ml-10 mt-3 pt-10 navFont text-3xl text-white"
+              >Contact Us</label
+            >
+            <form id="javascript_form" class="grid px-10 py-4 pt-12">
+              <input
+                type="email"
+                name="subject"
+                placeholder="Your Email"
+                class="
+                  mb-10
+                  bg-transparent
+                  border-b-2 border-white
+                  text-white
+                  placeholder-white
+                  font-light
+                  focus:outline-none
+                  navFont
+                  text-lg
+                "
+              />
+              <textarea
+                name="text"
+                placeholder="Message"
+                class="
+                  mb-10
+                  bg-transparent
+                  border-b-2 border-white
+                  text-white
+                  placeholder-white
+                  font-light
+                  focus:outline-none
+                  navFont
+                  text-lg
+                "
+              ></textarea>
+              <input
+                type="submit"
+                id="js_send"
+                value="Send"
+                class="
+                  bg-white
+                  rounded-2xl
+                  w-20
+                  shadow-lg
+                  mt-8
+                  normColor
+                  text-lg
+                "
+              />
+
+              <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+              <!-- <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p> -->
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- 
+          MAP
+         -->
+      <div class="mapouter mx-auto -mt-20 opacity-70">
+        <div class="gmap_canvas">
+          <iframe
+            width="100%"
+            height="325"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=%D9%85%D9%83%D8%AA%D8%A8%D8%A9%20%D8%A8%D8%B5%D8%B1%D9%8A%D8%A7%D8%AB%D8%A7&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe
+          ><style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              height: 325px;
+              width: 100%;
+            }</style>
+          <style>
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 325px;
+              width: 100%;
+            }
+          </style>
+        </div>
+      </div>
+      <!-- 
+          COPYRIGHTS
+         -->
+      <div class="w-full h-8 bg-gray-100">
+        <div class="bg-gray-100">
+          <h1 class="navFont font-bold ml-8 pt-4 pb-4 text-gray-400">
+            Copyright © 2021 BASREATHA | All Rights Reserved
+          </h1>
+        </div>
+      </div>
+      <!-- {{message}}
+      <span v-if="visible">This is hidden</span>
+      <ol>
+        
+        <li v-for="item in items" ><span v-bind:class="{complete: item.complete}">{{item.text}}</span></li>
+        
+      </ol>
+       -->
+    </div>
+    <!-- 
+      JAVA SCRIPT (MOSTLY RELATED TO CONTACT US (SENDS YOU AN EMAIL))
+     -->
+    <script>
+      //update this with your js_form selector
+      var form_id_js = "javascript_form";
+
+      var data_js = {
+        access_token: "f2inmmucwcnyg26d65bkrh8a",
+      };
+
+      function js_onSuccess() {
+        // remove this to avoid redirect
+        window.location =
+          window.location.pathname +
+          "?message=Email+Successfully+Sent%21&isError=0";
+      }
+
+      function js_onError(error) {
+        // remove this to avoid redirect
+        window.location =
+          window.location.pathname +
+          "?message=Email+could+not+be+sent.&isError=1";
+      }
+
+      var sendButton = document.getElementById("js_send");
+
+      function js_send() {
+        sendButton.value = "Sending…";
+        sendButton.disabled = true;
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+          if (request.readyState == 4 && request.status == 200) {
+            js_onSuccess();
+          } else if (request.readyState == 4) {
+            js_onError(request.response);
+          }
+        };
+
+        var subject = document.querySelector(
+          "#" + form_id_js + " [name='subject']"
+        ).value;
+        var message = document.querySelector(
+          "#" + form_id_js + " [name='text']"
+        ).value;
+        data_js["subject"] = subject;
+        data_js["text"] = message;
+        var params = toParams(data_js);
+
+        request.open("POST", "https://postmail.invotes.com/send", true);
+        request.setRequestHeader(
+          "Content-type",
+          "application/x-www-form-urlencoded"
+        );
+
+        request.send(params);
+
+        return false;
+      }
+
+      sendButton.onclick = js_send;
+
+      function toParams(data_js) {
+        var form_data = [];
+        for (var key in data_js) {
+          form_data.push(
+            encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key])
+          );
+        }
+
+        return form_data.join("&");
+      }
+
+      var js_form = document.getElementById(form_id_js);
+      js_form.addEventListener("submit", function (e) {
+        e.preventDefault();
+      });
+    </script>
+    <!-- 
+      Vue CLI 
+     -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- 
+      Vue programming
+     -->
+    <!-- <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          message:"Hello, World!",
+          visible: false,
+          items: [
+            {text:"fghjdkflgh", complete:true},
+            {text:"fghjd34tsfg", complete:true},
+            {text:"fghjdkf123lgh", complete:false},
+            {text:"fghjdkflgh567",complete:true}
+          ]
+        }
+      });
+    </script> -->
+  </body>
+</html>
